@@ -13,7 +13,7 @@ type Finding struct {
 	Severity  string
 }
 
-// Πρώτο check: pods χωρίς resource limits
+
 func RunAllPodsChecks(pods []v1.Pod) []Finding {
 	var findings []Finding
 	for _, pod := range pods {
