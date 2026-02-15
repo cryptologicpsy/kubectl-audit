@@ -40,9 +40,9 @@ func main() {
 		},
 	}
 
-	// Τρέξε checks
+	// run checks
 	findings := checks.RunAllPodsChecks(pods)
 
-	// Τύπωσε αποτελέσματα
+	// print results
 	output.PrintTable(findings)
 }
