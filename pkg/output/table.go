@@ -6,7 +6,7 @@ import (
 	"github.com/cryptologicpsy/kubectl-audit/pkg/checks"
 )
 
-// PrintTable τυπώνει τα findings σε απλό table
+// PrintTable 
 func PrintTable(findings []checks.Finding) {
 	fmt.Printf("%-15s %-20s %-40s %-10s\n", "NAMESPACE", "RESOURCE", "ISSUE", "SEVERITY")
 	for _, f := range findings {
