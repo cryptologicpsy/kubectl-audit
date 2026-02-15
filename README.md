@@ -13,21 +13,16 @@ This project is a hands-on DevOps exercise to create a kubectl plugin that:
 Currently, it uses **mock pods** so you can run it without having Kubernetes installed.
 
 ## Usage
-
 Run the plugin locally:
-
-\`\`\`bash
+```bash
 go run main.go
-\`\`\`
-
+```
 Example output:
-
-\`\`\`
+```
 kubectl-audit starting...
 NAMESPACE       RESOURCE             ISSUE                                    SEVERITY
 prod            pod-1                Container app has no resource limits     HIGH
-\`\`\`
-
+```
 ## Future Improvements
 
 - Connect to a real Kubernetes cluster using kubeconfig
